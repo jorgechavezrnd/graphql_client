@@ -28,7 +28,7 @@ const templateData = Handlebars.compile(template)
 
 async function search () {
   const query = `
-    query generalSearch ($keyword: String!){
+    query generalSearch ($keyword: String!) {
       searchItems(keyword: $keyword) {
         __typename
           ...on Course {
